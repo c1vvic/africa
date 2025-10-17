@@ -354,6 +354,7 @@ img {
     font-weight: 300;
     margin-bottom: 40px;
     text-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    color: white;
 }
 
 /* Анимированные фрукты */
@@ -1604,3 +1605,4 @@ select:valid ~ .input-label {
     vertical-align: middle;
 
 }
+
