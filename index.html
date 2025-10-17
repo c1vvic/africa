@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Africa Fruits - Экзотические фрукты из Африки</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="fruit-loader mango"></div>
+            <div class="fruit-loader papaya"></div>
+            <div class="fruit-loader passionfruit"></div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+            <div class="header__logo wow fadeInDown">
+            <img src="images/logo-white.png" alt="Africa Fruits">
+            <span>Africa Fruits</span>
+            </div>
+                <nav class="nav wow fadeInDown" data-wow-delay="0.2s">
+                    <a class="nav__link" href="#about">О нас</a>
+                    <a class="nav__link" href="#fruits">Фрукты</a>
+                    <a class="nav__link" href="#team">Команда</a>
+                    <a class="nav__link" href="#contacts">Контакты</a>
+                    <a class="nav__link order-btn" href="#order">Заказать</a>
+                </nav>
+                <button class="burger" id="navToggle">
+                </button>
+            </div>
+        </div>
+    </header>
+<!-- Hero Section -->
+<section class="intro" id="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h1 class="intro__title wow fadeInDown">Экзотические фрукты из Африки</h1>
+            <h2 class="intro__subtitle wow fadeInDown" data-wow-delay="0.2s">Свежесть и качество прямо к вашему столу</h2>
+            <a href="#fruits" class="btn wow fadeInDown" data-wow-delay="0.4s">Выбрать фрукты</a>
+        </div>
+    </div>
+    <!-- Анимированные фрукты -->
+    <div class="intro__fruits">
+        <img class="fruit-anim mango" src="images/floating-fruits/mango.png" alt="Mango">
+        <img class="fruit-anim papaya" src="images/floating-fruits/papaya.png" alt="Papaya">
+        <img class="fruit-anim passionfruit" src="images/floating-fruits/passionfruit.png" alt="Passionfruit">
+    </div>
+</section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__header wow fadeInUp">
+                <h2 class="section__title">О нашей компании</h2>
+                <div class="section__text">
+                    <p>Мы доставляем самые свежие экзотические фрукты напрямую из Африки</p>
+                </div>
+            </div>
+            <div class="about">
+                <div class="about__item wow fadeInLeft">
+                    <div class="about__img">
+                        <img src="images/about1.jpg" alt="About us">
+                    </div>
+                    <div class="about__content">
+                        <h3 class="about__title">Наша история</h3>
+                        <p>Основатель компании Андрей Колдунов во время поездки в Африку был поражён разнообразием и вкусом местных фруктов. Так родилась идея делиться этим богатством с жителями России.</p>
+                    </div>
+                </div>
+                <div class="about__item wow fadeInRight">
+                    <div class="about__content">
+                        <h3 class="about__title">Наши принципы</h3>
+                        <p>Мы тщательно отбираем поставщиков, контролируем условия транспортировки и хранения, чтобы вы получали только самые свежие и качественные фрукты.</p>
+                    </div>
+                    <div class="about__img">
+                        <img src="images/about2.jpg" alt="About us">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fruits -->
+    <section class="section section--fruits" id="fruits">
+        <div class="container">
+            <div class="section__header wow fadeInUp">
+                <h2 class="section__title">Наши экзотические фрукты</h2>
+                <div class="section__text">
+                    <p>Попробуйте настоящий вкус Африки</p>
+                </div>
+            </div>
+            <div class="fruits">
+                <!-- Манго -->
+                <div class="fruit__item wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fruit__img">
+                        <img src="images/fruits/mango.jpg" alt="Манго">
+                        <div class="fruit__overlay">
+                            <div class="fruit__taste">Вкус: Сладкий, сочный, с нотками персика и ананаса</div>
+                        </div>
+                    </div>
+                    <div class="fruit__info">
+                        <h3 class="fruit__name">Манго</h3>
+                        <p class="fruit__desc">Король фруктов с нежной мякотью и неповторимым ароматом.</p>
+                        <button class="fruit__btn" data-fruit="Манго">Заказать</button>
+                    </div>
+                </div>
+                
+                <!-- Папайя -->
+                <div class="fruit__item wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="fruit__img">
+                        <img src="images/fruits/papaya.jpg" alt="Папайя">
+                        <div class="fruit__overlay">
+                            <div class="fruit__taste">Вкус: Нежный, сладкий, напоминает дыню с оттенками абрикоса</div>
+                        </div>
+                    </div>
+                    <div class="fruit__info">
+                        <h3 class="fruit__name">Папайя</h3>
+                        <p class="fruit__desc">Плод с маслянистой текстурой и экзотическим вкусом.</p>
+                        <button class="fruit__btn" data-fruit="Папайя">Заказать</button>
+                    </div>
+                </div>
+                
+                <!-- Маракуйя -->
+                <div class="fruit__item wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fruit__img">
+                        <img src="images/fruits/passionfruit.jpg" alt="Маракуйя">
+                        <div class="fruit__overlay">
+                            <div class="fruit__taste">Вкус: Яркий, кисло-сладкий, с тропическими нотками</div>
+                        </div>
+                    </div>
+                    <div class="fruit__info">
+                        <h3 class="fruit__name">Маракуйя</h3>
+                        <p class="fruit__desc">Ароматный фрукт с сочной кисло-сладкой мякотью.</p>
+                        <button class="fruit__btn" data-fruit="Маракуйя">Заказать</button>
+                    </div>
+                </div>
+                
+                <!-- Гуава -->
+                <div class="fruit__item wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="fruit__img">
+                        <img src="images/fruits/guava.jpg" alt="Гуава">
+                        <div class="fruit__overlay">
+                            <div class="fruit__taste">Вкус: Сладкий, с нотками груши и клубники</div>
+                        </div>
+                    </div>
+                    <div class="fruit__info">
+                        <h3 class="fruit__name">Гуава</h3>
+                        <p class="fruit__desc">Фрукт с уникальным ароматом и полезными свойствами.</p>
+                        <button class="fruit__btn" data-fruit="Гуава">Заказать</button>
+                    </div>
+                </div>
+                
+                <!-- Тамаринд -->
+                <div class="fruit__item wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="fruit__img">
+                        <img src="images/fruits/tamarind.jpg" alt="Тамаринд">
+                        <div class="fruit__overlay">
+                            <div class="fruit__taste">Вкус: Кисло-сладкий, напоминает курагу с лимоном</div>
+                        </div>
+                    </div>
+                    <div class="fruit__info">
+                        <h3 class="fruit__name">Тамаринд</h3>
+                        <p class="fruit__desc">Экзотический фрукт с необычным вкусом.</p>
+                        <button class="fruit__btn" data-fruit="Тамаринд">Заказать</button>
+                    </div>
+                </div>
+                
+                <!-- Личи -->
+                <div class="fruit__item wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="fruit__img">
+                        <img src="images/fruits/lychee.jpg" alt="Личи">
+                        <div class="fruit__overlay">
+                            <div class="fruit__taste">Вкус: Нежный, сладкий, с ароматом розы и винограда</div>
+                        </div>
+                    </div>
+                    <div class="fruit__info">
+                        <h3 class="fruit__name">Личи</h3>
+                        <p class="fruit__desc">Маленький фрукт с потрясающим вкусом и ароматом.</p>
+                        <button class="fruit__btn" data-fruit="Личи">Заказать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section section--team" id="team">
+        <div class="container">
+            <div class="section__header wow fadeInUp">
+                <h2 class="section__title">Наша команда</h2>
+                <div class="section__text">
+                    <p>Профессионалы, которые делают ваш тропический опыт незабываемым</p>
+                </div>
+            </div>
+            <div class="team">
+                <div class="team__item wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team__photo">
+                        <img src="images/team/director.jpg" alt="Директор">
+                    </div>
+                    <div class="team__name">Андрей Колдунов</div>
+                    <div class="team__prof">Директор</div>
+                    <div class="team__text">
+                        <p>"Я влюбился в африканские фрукты с первого взгляда и хочу поделиться этой любовью с вами!"</p>
+                    </div>
+                </div>
+                <div class="team__item wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="team__photo">
+                        <img src="images/team/distributor.jpg" alt="Менеджер по дистрибуции">
+                    </div>
+                    <div class="team__name">Григорий Ульяшов</div>
+                    <div class="team__prof">Менеджер по дистрибуции</div>
+                    <div class="team__text">
+                        <p>"Я гарантирую, что фрукты попадут к вам в идеальном состоянии и точно в срок."</p>
+                    </div>
+                </div>
+                <div class="team__item wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team__photo">
+                        <img src="images/team/sales.jpg" alt="Менеджер по продажам">
+                    </div>
+                    <div class="team__name">Елизавета Становова</div>
+                    <div class="team__prof">Менеджер по продажам</div>
+                    <div class="team__text">
+                        <p>"Я помогу вам выбрать самые вкусные фрукты и оформить заказ."</p>
+                    </div>
+                </div>
+                <div class="team__item wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="team__photo">
+                        <img src="images/team/forwarder.jpg" alt="Экспедитор">
+                    </div>
+                    <div class="team__name">Тимофей Пасканов</div>
+                    <div class="team__prof">Экспедитор</div>
+                    <div class="team__text">
+                        <p>"Я организую быструю и безопасную доставку фруктов из Африки в Россию."</p>
+                    </div>
+                </div>
+                <div class="team__item wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team__photo">
+                        <img src="images/team/packer.jpg" alt="Упаковщик">
+                    </div>
+                    <div class="team__name">Тамерлан</div>
+                    <div class="team__prof">Упаковщик</div>
+                    <div class="team__text">
+                        <p>"Я тщательно упаковываю каждый фрукт, чтобы он дошёл до вас в идеальном состоянии."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section class="section section--contacts" id="contacts">
+        <div class="container">
+            <div class="section__header wow fadeInUp">
+                <h2 class="section__title">Контакты</h2>
+                <div class="section__text">
+                    <p>Свяжитесь с нами любым удобным способом</p>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="contacts__info wow fadeInLeft">
+                    <h3 class="contacts__title">Наши контакты</h3>
+                    <div class="contacts__text">
+                        <p><i class="fas fa-map-marker-alt"></i> г. Москва, ул. Пушкина-Колотушкина, д. 10, к. 52</p>
+                        <p><i class="fas fa-phone"></i> 8 (800) 555-35-35</p>
+                        <p><i class="fas fa-envelope"></i> africano_fructos@africa.gg</p>
+                    </div>
+                    <div class="contacts__social">
+                        <a href="https://t.me/C1vvic" target="_blank"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div class="contacts__map wow fadeInRight">
+                    <iframe 
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A1a2b3c4d5e6f7g8h9i0j&amp;mode=search&amp;text=улица%20Тельмана%2C%2010%2C%20подъезд%206&amp;ll=36.265154%2C54.534003&amp;z=17" 
+                    frameborder="0"
+                    allowfullscreen="true"
+                    style="position:relative;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Order Modal -->
+<div class="modal" id="orderModal">
+    <div class="modal__content">
+        <button class="modal__close">&times;</button>
+        <h2 class="modal__title">🍍 Оформить заказ</h2>
+        <form class="order-form" id="orderForm">
+            <div class="form__group">
+                <label for="fruitType">
+                    <i class="fas fa-apple-alt"></i> Выберите фрукт:
+                </label>
+                <div class="select-wrapper">
+                    <select id="fruitType" required>
+                        <option value="" disabled selected>-- Выберите фрукт --</option>
+                        <option value="Манго">Манго - сладкий, с нотками персика</option>
+                        <option value="Папайя">Папайя - нежный вкус дыни</option>
+                        <option value="Маракуйя">Маракуйя - яркий кисло-сладкий</option>
+                        <option value="Гуава">Гуава - сладкий, с ароматом клубники</option>
+                        <option value="Тамаринд">Тамаринд - кисло-сладкий, как курага</option>
+                        <option value="Личи">Личи - нежный, с ароматом розы</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <div class="form__group">
+                <label for="quantity">
+                    <i class="fas fa-weight-hanging"></i> Количество (кг):
+                </label>
+                <input type="number" id="quantity" min="1" value="1" required>
+            </div>
+
+            <div class="form__group">
+                <label for="customerName">
+                    <i class="fas fa-user"></i> Ваше имя:
+                </label>
+                <input type="text" id="customerName" required>
+            </div>
+
+            <div class="form__group">
+                <label for="phoneNumber">
+                    <i class="fas fa-phone"></i> Телефон:
+                </label>
+                <input type="tel" id="phoneNumber" placeholder="+7 (XXX) XXX-XX-XX" 
+                       pattern="\+7\s?[0-9]{3}\s?[0-9]{3}\s?[0-9]{2}\s?[0-9]{2}" required>
+            </div>
+
+            <div class="form__group">
+                <label for="deliveryAddress">
+                    <i class="fas fa-map-marker-alt"></i> Адрес доставки:
+                </label>
+                <textarea id="deliveryAddress" required></textarea>
+            </div>
+
+            <div class="form__group">
+                <label for="paymentCard">
+                    <i class="fas fa-credit-card"></i> Номер карты:
+                </label>
+                <input type="text" id="paymentCard" placeholder="XXXX XXXX XXXX XXXX"
+                       pattern="\d{16}" title="16 цифр без пробелов">
+                <div class="form__hint">(Необязательно, можно оплатить при получении)</div>
+            </div>
+
+            <div class="form__actions">
+                <button type="submit" class="btn btn--order pulse">
+                    <i class="fas fa-shopping-basket"></i> Подтвердить заказ
+                </button>
+            </div>
+
+            <div class="form__warning">
+                <i class="fas fa-exclamation-triangle"></i> Положи назад мамину карточку!
+            </div>
+        </form>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__columns">
+            <div class="footer__logo-col">
+                <img src="images/logo.png" alt="Africa Fruits">
+                <p>Наши фрукты - наше всё!</p>
+            </div>
+            
+            <div class="footer__links">
+                <a href="#about">О нас</a>
+                <a href="#fruits">Фрукты</a>
+                <a href="#team">Команда</a>
+                <a href="#contacts">Контакты</a>
+            </div>
+            
+            <div class="footer__social">
+                <a href="https://t.me/C1vvic" target="_blank">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer__copyright">
+            © 2025 Africa Fruits. Все права защищены.
+        </div>
+    </div>
+    <div class="footer__fruits">
+        <img class="footer__fruit" src="images/floating-fruits/mango.png" alt="Mango" style="top:10%; left:5%; animation-delay:0s;">
+        <img class="footer__fruit" src="images/floating-fruits/papaya.png" alt="Papaya" style="top:20%; left:80%; animation-delay:2s;">
+        <img class="footer__fruit" src="images/floating-fruits/passionfruit.png" alt="Passionfruit" style="top:70%; left:10%; animation-delay:4s;">
+    </div>
+</footer>
+
+<script src="js/wow.min.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
