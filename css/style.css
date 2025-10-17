@@ -346,6 +346,7 @@ img {
     font-weight: 700;
     margin-bottom: 20px;
     text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    color: white;
 }
 
 .intro__subtitle {
@@ -1601,4 +1602,5 @@ select:valid ~ .input-label {
 
 .modal__close i {
     vertical-align: middle;
+
 }
